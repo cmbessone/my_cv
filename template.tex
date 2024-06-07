@@ -1,0 +1,172 @@
+
+%
+% Contributors
+% ------------
+% * ifokkema
+% * Bertbk
+% * Hespe
+%
+% Attributions
+% ------------
+% * ThirtyNinesecondscv is based on the fortysecondscv class 
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	showframes,
+	% vline=2.2em,
+	% maincolor=cvgreen,
+	% sidecolor=gray!50,
+	% sectioncolor=red,
+	% subsectioncolor=orange,
+	% itemtextcolor=black!80,
+	  %sidebarwidth=1.9\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	% profilepicsize=4.5cm,
+	% profilepicborderwidth=3.5pt,
+	% profilepicstyle=profilecircle,
+	% profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+]{ThirtyNinesecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tabto}
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+	% default font size is \large, so adjust to harmonize with sidebar layout
+	bubble center node font = \footnotesize,
+	bubble node font = \footnotesize,
+	% default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+	bubble center node size = 0.4\sidebartextwidth,
+	bubble node size = 0.25\sidebartextwidth,
+	distance center/other bubbles = 1.5em,
+	% set center bubble color
+	bubble center node color = maincolor!70,
+	% define the list of colors usable in the diagram
+	set color list = {maincolor!10, maincolor!40,
+	maincolor!20, maincolor!60, maincolor!35},
+	% sets the opacity at which the bubbles are shown
+	bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture, just write inside brackets the name of the file of the profile pic you want to use
+
+\cvname{\newline Cristian Bessone\newline} % Your name
+
+\cvjobtitle{Software Engineer} % Job title/career
+
+\cvdate{31 March 1986} % Date of birth
+\cvaddress{Argentina} % Short address/location, use \newline if more than 1 line is required
+\cvsite{https://github.com/cmbessone} % Personal website
+\cvmail{cristianbessone@gmail.com} % Email address
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+\aboutme{With over 13 years of professional experience, I've developed into a committed and adaptable individual skilled in both coding and management. Recognized for my strong social communication abilities, I'm approachable and easy to engage with. My passion for AI continuously drives me to enhance my skills and knowledge. Whether it's brainstorming technical solutions or supporting others, I'm always ready to positively contribute to any team.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\interests{I'm looking to join a company that faces fresh challenges regularly, providing opportunities for both professional and personal growth. I'd love to be part of a strong team that embraces new technologies, keeping me up-to-date and engaged in exciting projects.}
+
+\makeprofile % Print the sidebar
+
+\section{Experience}
+
+\newline\newline 
+{\large\underline{Senior Associate}}  \hspace*{22pt} Nov 2022 - Present
+\newline\newline
+JP Morgan Chase \& Co., Buenos Aires, Argentina
+\newline- L2 Production Support using JIRA, ServiceNow, and Confluence.
+\newline- Automated processes with Python.
+\newline- Wrote Oracle queries.
+\newline- Monitored queues with Grafana and Splunk.
+\newline- Managed on-premise and AWS cloud environments.
+\newline\textit{\underline{Stack:} Python, Oracle, Grafana, Splunk, AWS, JIRA, ServiceNow}
+\newline
+
+{\large\underline{Technical Specialist}}  \hspace*{22pt} Jul 2021 - Oct 2023
+\newline\newline
+Factumex, Buenos Aires, Argentina (Customer: NTTData Mexico)
+\newline- Developed ETL processes with Abinitio.
+\newline- Backend development with Java Spring and .Net.
+\newline- Automated tasks with Bash scripting.
+\newline\textit{\underline{Stack:} Abinitio, Java Spring, .Net, MongoDB, PostgreSQL, Bash}
+\newline
+
+{\large\underline{Software Designer}}  \hspace*{22pt} Jan 2021 - Dec 2021
+\newline\newline
+Overactive, Buenos Aires, Argentina (Customer: VelocityEHS)
+\newline- Worked on EHS applications using agile.
+\newline- Defined user stories.
+\newline- Ensured QA criteria matched test cases.
+\newline\textit{\underline{Stack:} Agile, Jira, Confluence}
+\newline
+
+{\large\underline{Application Manager}}  \hspace*{22pt} Mar 2018 - Jul 2019
+\newline\newline
+Citi, Buenos Aires, Argentina
+\newline- Managed the Full Suite Accounting Engine.
+\newline- Planned installations and upgrades.
+\newline- Coordinated audits and regulatory implementations.
+\newline
+
+{\large\underline{IT Project Lead}}  \hspace*{22pt} Apr 2013 - Mar 2018
+\newline\newline
+Citi, Buenos Aires, Argentina
+\newline- Coordinated Accounting Engine projects.
+\newline- Planned and estimated resources.
+\newline\textit{\underline{Methodology:} Waterfall}
+\newline
+
+{\large\underline{AB Initio Developer}}  \hspace*{22pt} Jul 2011 - Mar 2013
+\newline\newline
+Citi, Buenos Aires, Argentina
+\newline- Created AB Initio Graphs and Plans.
+\newline- Integrated with NDM Secure Transfer and TIBCO.
+\newline- Maintained Co>Operating System and infrastructure.
+\newline\textit{\underline{Stack:} Ab Initio, NDM Secure Transfer, TIBCO}
+\newline
+
+{\large\underline{JDE Developer}}  \hspace*{22pt} Mar 2008 - Jul 2011
+\newline\newline
+Grupo ASSA, Buenos Aires, Argentina (Customer: Johnson \& Johnson)
+\newline- Developed code for Oracle JD Edwards.
+\newline- Documented ERP processes.
+\newline\textit{\underline{Stack:} Oracle JD Edwards}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem {}{Systems Engineering - Graduated {\normalfont }}{2017 - 2021}{Universidad Argentina de la Empresa (UADE)}
+\end{twenty}
+
+ \begin{twenty}
+ \twentyitem{}{Data Scientist Specialist - Level: Postgrade{\normalfont }}{2022 - 2024}{Instituto Tecnologico de Buenos Aires (ITBA)}
+ \end{twenty}
+\end{document}
