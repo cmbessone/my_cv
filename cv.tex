@@ -1,0 +1,183 @@
+\documentclass[a4paper]{ThirtyNinesecondscv}
+
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tabto}
+\usepackage{amssymb}
+\usepackage{smartdiagram}
+\smartdiagramset{
+	bubble center node font = \footnotesize,
+	bubble node font = \footnotesize,
+	bubble center node size = 0.4\sidebartextwidth,
+	bubble node size = 0.25\sidebartextwidth,
+	distance center/other bubbles = 1.5em,
+	bubble center node color = maincolor!70,
+	set color list = {maincolor!10, maincolor!40, maincolor!20, maincolor!60, maincolor!35},
+	bubble fill opacity = 0.8,
+}
+
+% Extend the sidebar with Education and Languages (uses free space on page 1)
+\usepackage{etoolbox}
+\providecolor{darkgrey}{HTML}{333333}
+\patchcmd{\makeprofile}{\end{textblock}}{%
+	\profilesection{Education}
+	\begin{flushleft}
+		\textbf{Systems Engineering}\newline
+		UADE -- Universidad Argentina de la Empresa\newline
+		Graduated (2017 - 2021)\par\smallskip
+		\textbf{Data Scientist Specialist}\newline
+		ITBA -- Instituto Tecnol\'ogico de Buenos Aires\newline
+		(2022 - 2024)
+	\end{flushleft}
+	\profilesection{Languages}
+	\begin{flushleft}
+		\textbf{English:} Professional Working Proficiency\newline
+		\textbf{Spanish:} Native
+	\end{flushleft}
+\end{textblock}}{}{\errmessage{patch failed}}
+
+\profilepic{}
+\cvname{Cristian Bessone\newline}
+\cvjobtitle{Senior AI Engineer | Backend \& AI Solutions Architect}
+\cvdate{}
+\cvaddress{Argentina}
+\cvsite{www.cristianbessone.com}
+\cvmail{cristianbessone@gmail.com}
+
+\begin{document}
+
+\aboutme{Senior AI and Backend Engineer with 18+ years building and owning software products, enterprise platforms, and data-intensive systems. Currently focused on Applied and Generative AI, shipping production LLM applications, RAG pipelines, and agentic services in Python with FastAPI, Pydantic 2, and Pydantic AI. Deep background in relational databases (PostgreSQL), data access layers, query performance tuning, and data modeling, plus large-scale data processing with Pandas and Polars. Product-minded engineer who owns features end to end, from data model and API design to deployment, observability, and production reliability.}
+
+\interests{Applied AI, Agentic Systems, Product Engineering, Database Performance, Data Modeling, Distributed Systems, and production-grade AI applications.}
+
+\makeprofile
+
+\section{Core Expertise}
+
+
+\textbf{AI Engineering}
+\newline
+LLM Applications, Agentic AI, Multi-Agent Systems, RAG, Embeddings, Semantic Search, Vector Databases, Tool/Function Calling, Structured Outputs, Prompt \& Context Engineering, Guardrails, Human-in-the-Loop
+
+\textbf{Python Frameworks}
+\newline
+FastAPI, Pydantic 2, Pydantic AI, LangChain, LangGraph, CrewAI, Django, Django REST Framework, Flask, SQLAlchemy
+
+\textbf{Data Processing}
+\newline
+Pandas, Polars, ETL, Data Pipelines, Ab Initio
+
+\textbf{Databases \& Data Access}
+\newline
+PostgreSQL, SQL, RDBMS Design, Data Modeling (relational and dimensional), Query Optimization, Indexing Strategies, Execution Plan Analysis, ORMs, MongoDB, NoSQL, Vector Databases
+
+\textbf{Software Architecture}
+\newline
+Product Development, Distributed Systems, Microservices, API Design, Cloud-Native Architecture, Enterprise Integration, System Design
+
+\textbf{Cloud \& Infrastructure}
+\newline
+AWS, Azure, Terraform, Docker, CI/CD, Unix, Bash
+
+\textbf{Other Languages}
+\newline
+C\#, .NET
+% TODO: only keep if you have real hands-on experience:
+% , Java, Spring Boot, Hibernate, JDBC, Enterprise JavaBeans (EJB)
+
+\textbf{Development Practices}
+\newline
+Testing, Documentation, Agile, Code Review, Observability, Production Reliability
+
+\section{Experience}
+
+
+\begin{minipage}{\linewidth}
+{\large\underline{Sr Software Engineer}}  \hspace*{22pt} Apr 2025 - Present
+\newline
+Blend -- AI Engineering, embedded in client product teams (Franklin Templeton, Disney)
+\newline- Embedded as a core engineer within client product teams, owning AI features end to end: requirements, data model, API design, implementation, deployment, and production support.
+\newline- Build production Agentic AI services in Python with FastAPI, Pydantic 2, and Pydantic AI, using typed models and structured LLM outputs for validated, reliable tool calling.
+\newline- Architect AI workflows combining LLMs, Retrieval-Augmented Generation (RAG), vector search, guardrails, and human-in-the-loop patterns, orchestrated with LangGraph and CrewAI.
+\newline- Design PostgreSQL schemas and data access layers backing AI products (conversation state, document metadata, audit trails), tuning queries and indexes for low-latency retrieval.
+\newline- Process and prepare large financial and content datasets for ingestion and evaluation pipelines using Pandas and Polars.
+\newline- For \textbf{Franklin Templeton}: delivered secure, scalable AI assistants and financial data integration within a highly regulated environment.
+\newline- For \textbf{Disney}: integrated multi-agent architectures into production workflows, focusing on safety, guardrails, automation, and scalability.
+\newline- Evaluate trade-offs across models, retrieval strategies, orchestration approaches, vector databases, latency, cost, and reliability.
+\newline\textit{\underline{Stack:} Python, FastAPI, Pydantic 2, Pydantic AI, LangChain, LangGraph, CrewAI, PostgreSQL, Pandas, Polars, RAG, Vector DBs (Pinecone, OpenSearch, Azure AI Search), AWS, Azure, Terraform}
+\end{minipage}
+\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+{\large\underline{Software Engineer}}  \hspace*{22pt} Nov 2022 - Apr 2025
+\newline
+JP Morgan Chase \& Co., Buenos Aires, Argentina
+\newline- Member of an in-house product team building and evolving internal financial data platforms used by global business users.
+\newline- Developed and maintained Django and FastAPI backend services for financial data processing, owning features from design to production.
+\newline- Designed relational data models and optimized SQL queries, indexes, and ORM access patterns, reducing report and API response times.
+\newline- Built Python data workflows with Pandas (and Polars for larger workloads) to automate reporting, reconciliation, and analysis.
+\newline- Designed and integrated APIs supporting distributed applications and cross-team workflows.
+\newline- Managed AWS infrastructure for hosting and scaling applications.
+\newline\textit{\underline{Stack:} Python, Django, FastAPI, Flask, Pydantic, Pandas, Polars, PostgreSQL, SQL, AWS, Unix, Bash, NoSQL}
+\end{minipage}
+\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+{\large\underline{Backend Developer}}  \hspace*{22pt} Jan 2022 - Oct 2022
+\newline
+Factumex, Buenos Aires, Argentina (Customer: NTTData)
+\newline- Built enterprise Ab Initio ETL processes for large-scale data integration.
+\newline- Designed and built backend applications with C\# and .NET Framework.
+\newline- Modeled and integrated data across PostgreSQL and MongoDB, tuning queries and bulk-load processes for high-volume workloads.
+\newline- Automated operational tasks with Bash scripting across structured and semi-structured data workflows.
+\newline\textit{\underline{Stack:} C\#, .NET Framework, Python, Ab Initio, PostgreSQL, MongoDB, SQL, NoSQL}
+\end{minipage}
+\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+{\large\underline{Software Engineer}}  \hspace*{22pt} Jan 2021 - Dec 2021
+\newline
+Overactive, Buenos Aires, Argentina (Customer: VelocityEHS)
+\newline- Worked on the VelocityEHS product team, developing and integrating backend APIs for a commercial EHS SaaS platform using C\# and .NET.
+\newline- Contributed to product releases within Agile teams, collaborating with product managers, QA, and engineering.
+\newline- Defined user stories and aligned QA acceptance criteria with test cases.
+\newline\textit{\underline{Stack:} C\#, .NET, Python, SQL, NoSQL, APIs, Agile, Jira, Confluence, Unix, XML}
+\end{minipage}
+\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+{\large\underline{Backend Developer}}  \hspace*{22pt} Jul 2019 - Dec 2020
+\newline
+Freelance Product, Buenos Aires, Argentina
+\newline- Built and shipped a client management product end to end, owning the backend architecture and roadmap.
+\newline- Designed the PostgreSQL data model and a RESTful API with Django REST Framework, including authentication and authorization.
+\newline- Optimized queries and indexing as data grew, keeping APIs fast.
+\newline- Applied automated testing, documentation, and containerized deployment with Docker.
+\newline\textit{\underline{Stack:} Python, Django REST Framework, PostgreSQL, SQL, Docker}
+\end{minipage}
+\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+{\large\underline{ETL Developer / Application Architect}}  \hspace*{22pt} Jul 2011 - Jul 2019
+\newline
+Citi, Buenos Aires, Argentina
+\newline- Progressed from developer to global application architect, owning the Full Suite Accounting Engine platform used across the bank.
+\newline- Designed accounting and financial data models and enterprise ETL solutions using Ab Initio over relational databases.
+\newline- Led performance tuning of high-volume SQL and batch processes to meet strict accounting close windows.
+\newline- Led Accounting Engine roadmap, audits, upgrades, resource planning, and technical design across international teams.
+\newline\textit{\underline{Stack:} Ab Initio, SQL, RDBMS, Data Modeling, Unix, Enterprise Architecture, Data Integration}
+\end{minipage}
+\par\vspace{6pt}
+
+\begin{minipage}{\linewidth}
+{\large\underline{JDE Developer}}  \hspace*{22pt} Mar 2008 - Jul 2011
+\newline
+Grupo ASSA, Buenos Aires, Argentina (Customer: Johnson \& Johnson)
+\newline- Developed Oracle JD Edwards applications and customizations.
+\newline- Delivered business-oriented solutions with enterprise technology teams.
+\end{minipage}
+\par\vspace{6pt}
+
+\end{document}
